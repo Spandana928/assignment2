@@ -1,0 +1,25 @@
+{
+  "prescriptionDrugs": [
+    ["Naproxen", "Feb 28, 2024", "Dr. Best", "$20.00"],
+    ["Ibuprofen", "Mar 1, 2024", "Dr. Smith", "$15.00"]
+  ],
+  "otcDrugs": [
+    ["Advil", "Mar 3, 2024", "$8.00", "Shoppers", "Pain relief"]
+  ],
+  "medicalSupplies": [
+    ["Tensor Bandage", "Mar 5, 2024", "Yes (Dr. Best)", "$10.00", "PharmaCo"]
+  ],
+  "parking": [
+    ["Lot A", "Feb 28, 2024", "$5.00", "Meter 101"],
+    ["Lot B", "Mar 1, 2024", "$6.00", "Meter 102"]
+  ],
+  "mileage": [
+    ["Feb 28, 2024", "HSC, Winnipeg", "333 Broadway", "20 km"]
+  ],
+  "transportFare": [
+    ["Feb 28, 2024", "25 Furby St", "440 Edmonton St", "Taxi", "$15.00"],
+    ["Mar 1, 2024", "HSC", "665 William Ave", "Bus", "$3.00"]
+  ]
+}
+
+  

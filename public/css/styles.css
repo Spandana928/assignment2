@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #fff;
+  color: #222;
+}
+.content {
+  margin-top: 2rem;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+
+.address {
+  width: 50%;
+}
+
+.contact {
+  width: 50%;
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #2a2a2a;
+}
+
+h2 {
+  font-size: 18px;
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 12px;
+  margin-top: 40px;
+  color: #555;
+}
+
+.certification {
+  margin-top: 30px;
+  border-top: 1px dashed #888;
+  padding-top: 20px;
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #666;
+}
+
+@media print {
+  body {
+    margin: 20mm;
+  }
+
+  header {
+    page-break-before: auto;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  .certification {
+    page-break-inside: avoid;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 10mm;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10pt;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+  }
+}
+
+
+input.underline-only {
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  padding: 2px 4px;
+  width: 250px;
+  font-size: 1rem;
+}
+.button-switch {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 8px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.button-switch:hover {
+  background-color: #0056b3;
+}
+
+.button-switch.green {
+  background-color: #28a745;
+}
+
+.button-switch.green:hover {
+  background-color: #1e7e34;
+}

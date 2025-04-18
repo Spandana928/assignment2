@@ -1,0 +1,145 @@
+
+extends layout
+
+block content
+  div(style="text-align: right; margin-bottom: 1rem;")
+    a(href="/medical/dataset1", class="button-switch") Medical Report
+    a(href="/report/dataset2", class="button-switch green") Worker Progress Report
+
+
+  fieldset.section
+    legend Return to Work
+    p Select one:
+
+    .options
+      label.checkbox
+        input(type="radio", name="return", checked=(returnToWork[0][0] === 'I have not returned'))
+        span I have not missed time from work 
+
+      label.checkbox
+        input(type="radio", name="return", checked=(returnToWork[0][0] === 'I have not returned'))
+        span I have not returned to work
+
+      label.checkbox
+        input(type="radio", name="return", checked=(returnToWork[0][0] === 'Returned'))
+        span I returned to work on: 
+        input(type="text", name="frequency",class="input underline-only")
+
+
+
+  fieldset.section
+    p I am working:
+    .checkbox-group
+      each label in ['Full duties, regular hours', 'Full duties, reduced hours', 'Modified duties, regular hours', 'Modified duties, reduced hours']
+        label.checkbox
+          input(type="checkbox")
+          span= label
+
+
+  div.page-break
+
+  fieldset.section
+    legend Recovery
+    p Select one:
+
+    .options
+      label.radio
+        input(type="radio", name="recovery", checked=(recovery[0][2].toLowerCase().includes('not')))
+        span I have not fully recovered from my workplace injury.
+
+      label.radio
+        input(type="radio", name="recovery", checked=(recovery[0][2].toLowerCase().includes('fully')))
+        span I have fully recovered from my workplace injury.
+
+  fieldset.section
+    legend Recovery Comments
+    p I have provided the following comments about my recovery:
+    textarea.text-block(rows="6")= recovery[0][3]
+
+  fieldset.section
+    legend Pain Scale
+    p I rate my current pain/discomfort on a scale of 1–10, where 1 is no pain and 10 is severe pain out of 10.
+
+    .pain-scale
+      - for (let i = 1; i <= 10; i++)
+        label.radio
+          input(type="radio", name="pain", checked=(painScale[0][0] == i.toString()))
+          span= i
+
+  fieldset.section
+    legend Medical Treatment
+    p Select one:
+
+    .options
+      label.radio
+        input(type="radio", name="treatment", checked=(medicalTreatment.length === 0))
+        span I am not continuing to receive medical treatment for my workplace injury.
+
+      label.radio
+        input(type="radio", name="treatment", checked=(medicalTreatment.length > 0))
+        span I am continuing to receive medical treatment for my workplace injury from:
+
+        if medicalTreatment.length
+          input(type="text", name="frequency", placeholder="medical provider type", class="input underline-only")
+
+
+    p I am attending a Chiropractor or Physiotherapist
+    input(type="text", name="frequency", placeholder="Frequency – e.g., weekly, bi-weekly", class="input underline-only")
+
+
+  fieldset.section
+    legend Home Exercises
+    p Select one:
+
+    .options
+      label.radio
+        input(type="radio", name="home", checked=(homeExercises[0][0].toLowerCase() === 'no'))
+        span I am not doing home exercises for my workplace injury.
+
+      label.radio
+        input(type="radio", name="home", checked=(homeExercises[0][0].toLowerCase() === 'yes'))
+        span I am doing home exercises for my workplace injury.
+
+  
+
+    p List the exercises you are doing:
+    textarea.text-block= homeExercises[0][1]
+
+  fieldset.section
+    legend Other Information
+    p I would like to provide the following additional information about my claim/injury:
+    textarea.text-block= additionalInfo[0][0]
+
+  fieldset.section
+    legend Medication
+    p Select one:
+
+    .options
+      label.radio
+        input(type="radio", name="medication", checked=(medication[0][0].toLowerCase() === 'no'))
+        span I am not taking medication for my workplace injury.
+
+      label.radio
+        input(type="radio", name="medication", checked=(medication[0][0].toLowerCase() === 'yes'))
+        span I am taking medication for my workplace injury:
+        input(type="text", name="frequency",  class="input underline-only")
+
+    p My next medical treatment is:
+        input(type="text", name="frequency",class="input underline-only")
+
+
+  fieldset.section.certification
+    legend Certification
+
+    label.checkbox
+      input(type="checkbox")
+      span I certify that the information given on this form is true, correct and complete to the best of my knowledge. I agree to notify the Workers Compensation Board of Manitoba (WCB) immediately once I return to any form of work and/or employment. I understand that it is an offence to knowingly make a false statement to the WCB. I also understand that it is an offence to withhold information from WCB which affects my entitlement to compensation (e.g., full or partial recovery from injury, ability to return to work, sources of additional income, etc.). I understand that refusing to co-operate with, or follow my treatment, may result in the WCB reducing or suspending my benefits.
+
+    label.checkbox
+      input(type="checkbox")
+      span I understand that the Privacy Notice applies to the personal information collected in this document.
+
+
+
+
+

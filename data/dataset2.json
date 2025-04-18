@@ -1,0 +1,12 @@
+{
+    "prescriptionDrugs": [["Ibuprofen", "Mar 15, 2024", "Dr. Jane", "$15.00"]],
+    "parking": [["100 Main St", "April 1, 2024", "$12.00", "54321"]],
+  
+    "returnToWork": [["Returned", "April 5, 2024"]],
+    "recovery": [["Jane Smith", "April 10, 2024", "Fully recovered", "All good"]],
+    "painScale": [["2"]],
+    "medicalTreatment": [["Physiotherapy", "Bi-weekly"]],
+    "homeExercises": [["No", ""]],
+    "additionalInfo": [["Back to work"]],
+    "medication": [["No", "", ""]]
+  }

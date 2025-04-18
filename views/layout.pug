@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/styles.css")
+    link(rel="stylesheet", href="/css/report.css")  
+  body
+    header
+      .header-top
+        .address
+          p
+            | 333 Broadway
+            br
+            | Winnipeg, MB R3C 4W3
+        .contact
+          p
+            | Phone: (204) 954-4321
+            br
+            | Toll Free: 1-855-954-4321
+            br
+            | wcb.mb.ca
+      h1= heading
+
+    main
+      block content
+
+    footer
+      p Page #{page}
+
+

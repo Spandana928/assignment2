@@ -1,0 +1,19 @@
+mixin renderTable(title, headers, rows)
+  section
+    h2= title
+    if Array.isArray(rows) && rows.length
+      table
+        thead
+          tr
+            each head in headers
+              th= head
+        tbody
+          each row in rows
+            tr
+              each cell in row
+                td= cell
+    else
+      p No data available.
+
+
+

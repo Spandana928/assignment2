@@ -1,0 +1,159 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 2rem 2rem 5rem 2rem; /* Add space around content, especially at the bottom */
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+/* Ensure header doesn't overlap content */
+header {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.report-header {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+}
+
+fieldset {
+  border: 2px solid black;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fefefe;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  color: #100101f0;
+}
+
+.radio,
+.checkbox {
+  display: flex;
+  align-items: start;
+  margin-bottom: 0.75rem;
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+  margin-top: 0.15rem;
+}
+
+.input {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  min-width: 200px;
+  margin: 0.5rem 0;
+  padding: 0 5px;
+}
+
+.text-block {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  background-color: #f5f5f5;
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+}
+
+textarea.text-block {
+  width: 100%;
+  border: 1px solid #999;
+  background-color: #f9f9f9;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.pain-scale {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.certification {
+  font-size: 0.95rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #444;
+}
+
+footer {
+  position: relative;
+  clear: both;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Print support */
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+      }
+    
+      .section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    
+      @page {
+        margin-top: 1in; /* Adjust this for top space on every printed page */
+        margin-right: 1in;
+        margin-bottom: 1in;
+        margin-left: 1in;
+      }
+    
+      /* Optional: Add padding to top of first element if needed */
+      .section:first-of-type {
+        margin-top: 0;
+      }
+   
+}
+.button-switch {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .button-switch.green {
+    background-color: #28a745;
+  }
+  

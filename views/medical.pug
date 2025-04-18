@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(style="text-align: right; margin-bottom: 1rem;")
+    a(href="/medical/dataset1", class="button-switch") Medical Report
+    a(href="/report/dataset2", class="button-switch green") Worker Progress Report
+
+  include mixins/tables
+
+  +renderTable('Prescription Drugs', ['Drug Name', 'Date', 'Doctor', 'Amount'], prescriptionDrugs)
+  +renderTable('Over-the-Counter Drugs', ['Drug Name', 'Date Purchased', 'Paid Amount', "Seller's Name", 'Reason for Purchase'], otcDrugs)
+  +renderTable('Medical Supplies', ['Item Purchased', 'Date Purchased', 'Prescribed?', 'Paid Amount', "Seller's Name"], medicalSupplies)
+  +renderTable('Parking', ['Location', 'Date', 'Amount', 'Meter'], parking)
+  +renderTable('Mileage', ['Appointment Date', 'Provider Address', 'Workplace Address', 'Distance (km)'], mileage)
+  +renderTable('Bus/Taxi Fare', ['Date', 'Starting Point', 'Facility', 'Mode', 'Fare'], transportFare)
+
+
+
