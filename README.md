@@ -1,17 +1,34 @@
 Workplace Injury Reporting App
+
+
+
 A demo web application built using Express.js and Pug templates to simulate the reporting and documentation process for workplace injury claims. It includes:
 
 Worker Progress Report
+
+
 Medical & Travel Expense Request
+
+
 Dynamic form rendering from backend data
 CSS styling for both screen and print
+
+
+
 Demo-ready data switching with no on-screen data entry
+
+
 🚀 Features
+
+
 📄 Printable, form-style views using Pug templating
 💅 Clean and print-friendly CSS styles
 🔁 Switch between two sample backend datasets
 🖨️ Auto-adjust layout for multiple printed pages
 ⚙️ Organized into separate routes and views for clarity
+
+
+
 🧪 Simulated Datasets
 The app includes two example datasets used to simulate data being loaded from a backend:
 
