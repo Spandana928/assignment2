@@ -37,7 +37,24 @@ The app includes two example datasets used to simulate data being loaded from a 
 Each route dynamically reads and injects data into the template at render time. No manual form input is required for demo purposes.
 
 📁 Project Structure
-project-root/ ├── app.js ├── routes/ │ ├── medical.js │ └── report.js ├── views/ │ ├── layout.pug │ ├── medical.pug │ ├── report.pug │ └── mixins/ │ └── tables.pug ├── public/ │ └── css/ │ ├── styles.css │ └── report.css ├── data/ │ ├── dataset1.json │ └── dataset2.json
+project-root/
+├── app.js
+├── routes/ │
+  ├── medical.js │ 
+  └── report.js 
+├── views/ │ 
+  ├── layout.pug │ 
+  ├── medical.pug │
+  ├── report.pug │ 
+  └── mixins/ │ 
+    └── tables.pug 
+    ├── public/ │
+      └── css/ │ 
+         ├── styles.css │ 
+         └── report.css
+         ├── data/ │
+           ├── dataset1.json │ 
+           └── dataset2.json
 🛠️ Setup Instructions
 Clone the repo
 https://github.com/Spandana928/assignment2
